@@ -71,7 +71,9 @@ const App = () => {
       <NavBar />
       <HeroSection onDesignClick={handleDesignClick} />
       <MainContent />
-      {showDesignTool && <DesignTool id="design-tool" />}
+      <div id="design-tool">
+      {showDesignTool && <DesignTool/>}
+      </div>
     </div>
   );
 };
